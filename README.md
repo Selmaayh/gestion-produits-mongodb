@@ -27,3 +27,13 @@ use MongoDB\Client;
 
 $client = new Client("mongodb://localhost:27017");
 $collection = $client->testdb->produits;
+
+
+Description de la liaison PHP ↔ MongoDB
+Pour connecter PHP à la base de données NoSQL MongoDB, j'ai utilisé l’extension officielle php_mongodb et la bibliothèque MongoDB disponible via Composer.
+
+Dans le code, j'instancie un client MongoDB avec l'adresse locale (mongodb://localhost:27017), puis je sélectionne la base de données et la collection désirée.
+
+Grâce à ce client, je peux facilement effectuer des opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) sur les documents MongoDB directement depuis PHP, en utilisant des méthodes comme find(), insertOne(), updateOne() et deleteOne().
+
+Cela permet une gestion simple et efficace des données NoSQL au sein d’une application PHP classique.
